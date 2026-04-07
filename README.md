@@ -8,6 +8,16 @@ Danloo is an AI-powered content refinement platform that transforms raw technica
 
 ![Material Analysis](docs/en_2.png)
 
+![Home](docs/cn_1.png)
+
+![Material List](docs/cn_2.png)
+
+![Material Detail](docs/cn_3.png)
+
+![Knowledge Capsule](docs/cn_4.png)
+
+![Profile](docs/cn_5.png)
+
 ## Features
 
 - Intelligent Extraction - AI analyzes content, extracts knowledge points, generates summaries

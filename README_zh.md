@@ -4,6 +4,10 @@
 
 ## 截图
 
+![Dashboard](docs/en_1.png)
+
+![Material Analysis](docs/en_2.png)
+
 ![首页](docs/cn_1.png)
 
 ![材料列表](docs/cn_2.png)
