@@ -1,0 +1,26 @@
+{
+  "pythonVersion": "3.11",
+  
+  // 继承workspace配置
+  "venvPath": "../..",
+  "venv": ".venv",
+  
+  // 当前服务作为主要包
+  "include": [
+    "."
+  ],
+  
+  "exclude": [
+    "**/__pycache__",
+    "**/.pytest_cache"
+  ],
+  
+  // 引用workspace中的其他包
+  "extraPaths": [
+    "../../common",
+    "."
+  ],
+  
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "warning"
+}

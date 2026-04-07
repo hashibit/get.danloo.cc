@@ -1,0 +1,601 @@
+{
+  "brand": {
+    "name": "丹炉",
+    "tagline": "您的AI驱动知识蒸馏器",
+    "description": "将原始材料转化为黄金洞察"
+  },
+  "nav": {
+    "dashboard": "情报",
+    "materials": "我的材料",
+    "myPellets": "我的丹药",
+    "myJobs": "我的任务",
+    "pellets": "丹药",
+    "create": "炼丹",
+    "explore": "探索",
+    "upload": "上传"
+  },
+  "auth": {
+    "login": "登录",
+    "logout": "登出",
+    "register": "注册",
+    "email": "邮箱地址",
+    "password": "密码",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码？",
+    "welcomeBack": "欢迎回来",
+    "signInPrompt": "请登录您的账户",
+    "newToDanloo": "初次使用丹炉？",
+    "createAccount": "创建您的账户",
+    "signIn": "登录",
+    "signingIn": "登录中...",
+    "loginRequired": "需要登录",
+    "loginRequiredMessage": "您需要登录才能上传材料。",
+    "goToLogin": "前往登录"
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "welcomeTitle": "欢迎来到丹炉",
+    "welcomeSubtitle": "您的AI驱动知识蒸馏器已准备好将原始材料转化为黄金洞察",
+    "stats": {
+      "totalPellets": "丹药总数",
+      "goldenPellets": "金丹",
+      "materials": "材料"
+    },
+    "sections": {
+      "recentMaterials": "最近材料",
+      "recentPellets": "最近丹药",
+      "viewAll": "查看全部"
+    },
+    "empty": {
+      "noMaterials": "暂无材料",
+      "uploadFirst": "上传您的第一个材料",
+      "noPellets": "暂无丹药",
+      "createFirst": "创建您的第一个丹药"
+    },
+    "actions": {
+      "tryAgain": "重试",
+      "read": "阅读",
+      "share": "分享"
+    }
+  },
+  "upload": {
+    "title": "上传材料",
+    "subtitle": "选择输入方式开始上传",
+    "selectInputType": "选择输入方式",
+    "maxSize": "最大尺寸",
+    "inputTypes": {
+      "file": {
+        "name": "上传文件",
+        "description": "支持文本、PDF、图片等多种格式"
+      },
+      "url": {
+        "name": "网页链接",
+        "description": "输入网页URL，自动抓取内容"
+      },
+      "textPaste": {
+        "name": "粘贴文本",
+        "description": "直接输入或粘贴文本内容"
+      }
+    },
+    "urlForm": {
+      "title": "网页链接上传",
+      "titlePlaceholder": "输入材料标题...",
+      "urlLabel": "网页链接",
+      "urlPlaceholder": "https://example.com/article",
+      "submitButton": "抓取并上传"
+    },
+    "textForm": {
+      "title": "文本内容上传",
+      "titlePlaceholder": "输入材料标题...",
+      "contentLabel": "文本内容",
+      "contentPlaceholder": "在此输入或粘贴您的文本内容...",
+      "submitButton": "上传文本"
+    },
+    "fileTypes": {
+      "text": {
+        "name": "纯文本",
+        "description": "文本文档、笔记、对话记录"
+      },
+      "pdf": {
+        "name": "PDF文档",
+        "description": "PDF格式的文档和资料"
+      },
+      "image": {
+        "name": "图片文件",
+        "description": "照片、截图、图表等图像"
+      }
+    },
+    "form": {
+      "materialTitle": "材料标题",
+      "contentType": "内容类型",
+      "uploadFile": "上传文件",
+      "publishMaterial": "发布材料",
+      "uploading": "正在上传...",
+      "publishing": "发布中...",
+      "uploadNow": "立即上传"
+    },
+    "contentTypes": {
+      "conversation": "对话记录",
+      "pdf": "PDF文档",
+      "textNote": "文本笔记"
+    },
+    "messages": {
+      "uploadSuccess": "素材上传成功！",
+      "fileUploadError": "文件上传错误",
+      "fileSelected": "已选择文件",
+      "uploadSuccessful": "上传成功",
+      "uploadFailed": "上传失败",
+      "checkingAuth": "验证身份中...",
+      "urlAndTitleRequired": "请输入网页链接和标题",
+      "textAndTitleRequired": "请输入文本内容和标题"
+    }
+  },
+  "create": {
+    "title": "炼丹工坊",
+    "subtitle": "组合材料创造强大的丹药",
+    "alchemyWorkbench": "AI炼丹师工作台",
+    "materialsInFurnace": "已投入 {{count}} 种材料，准备炼制",
+    "selectFromLibrary": "从右侧材料库选择材料投入炉中",
+    "furnaceStandby": "炼丹炉待命中",
+    "selectFromRight": "请从右侧选择材料开始炼制",
+    "alchemyWorking": "AI炼丹师工作中...",
+    "startAlchemyWithCount": "开始炼丹 ({{count}})",
+    "materialLibrary": "材料库",
+    "searchMaterials": "搜索材料...",
+    "noMatchingMaterials": "没有找到匹配的材料",
+    "noAvailableMaterials": "暂无可用材料",
+    "form": {
+      "pelletTitle": "丹药标题",
+      "pelletTitlePlaceholder": "输入丹药标题...",
+      "selectedMaterials": "已选材料",
+      "availableMaterials": "可用材料",
+      "uploadNewMaterial": "添加新材料",
+      "materialTitle": "材料标题",
+      "materialTitlePlaceholder": "材料标题...",
+      "cancel": "取消",
+      "upload": "上传"
+    },
+    "actions": {
+      "startAlchemy": "开始炼丹",
+      "alchemyInProgress": "炼制中..."
+    },
+    "empty": {
+      "noMaterialsSelected": "未选择材料",
+      "selectFromPanel": "从右侧面板选择材料",
+      "noMaterialsAvailable": "暂无可用材料"
+    },
+    "pelletConfig": "丹药配置",
+    "uploadForm": {
+      "title": "上传新材料",
+      "uploading": "上传中..."
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "create": "创建",
+    "update": "更新",
+    "search": "搜索",
+    "filter": "筛选",
+    "sort": "排序",
+    "date": "日期",
+    "title": "标题",
+    "description": "描述",
+    "status": "状态",
+    "actions": "操作",
+    "networkError": "网络错误"
+  },
+  "pellets": {
+    "title": "您的丹药",
+    "subtitle": "发现和管理您生成的丹药",
+    "search": {
+      "placeholder": "搜索丹药...",
+      "clear": "清除"
+    },
+    "meta": {
+      "author": "AI助手",
+      "readTime": "分钟阅读",
+      "createdAt": "创建于",
+      "dateMonth": "年",
+      "defaultSummary": "这个丹药提供了关于该主题的全面见解，为有兴趣深入了解该主题的读者提供了宝贵的观点和可行的建议。"
+    },
+    "actions": {
+      "view": "查看",
+      "bookmark": "收藏",
+      "share": "分享"
+    },
+    "empty": {
+      "noPellets": "未找到丹药",
+      "noPelletsSubtitle": "开始创建您的第一个丹药"
+    },
+    "tags": {
+      "normal": "普通丹",
+      "special": "彩蛋",
+      "golden": "金丹",
+      "public": "公开"
+    },
+    "card": {
+      "alchemist": "炼丹师",
+      "retry": "重试",
+      "star": "★"
+    }
+  },
+  "myPellets": {
+    "title": "我的丹药",
+    "subtitle": "管理您创建的所有丹药"
+  },
+  "myJobs": {
+    "title": "我的任务",
+    "description": "管理你的炼丹任务和进度",
+    "refresh": "↺ 刷新",
+    "startAlchemy": "开始炼丹",
+    "retry": "重试",
+    "retrySuccess": "任务重试成功！任务将重新开始处理。",
+    "retryFailed": "重试任务失败，请稍后再试",
+    "statusFilter": {
+      "all": "全部",
+      "pending": "等待中",
+      "in_progress": "进行中",
+      "completed": "已完成",
+      "failed": "失败",
+      "cancelled": "已取消"
+    },
+    "table": {
+      "status": "状态",
+      "createdAt": "创建时间",
+      "actions": "操作"
+    },
+    "empty": {
+      "noJobs": "暂无任务",
+      "noMatch": "没有符合条件的任务"
+    },
+    "count": "显示 {{shown}} / {{total}} 条任务"
+  },
+  "explore": {
+    "title": "探索丹药",
+    "subtitle": "发现社区分享的优质内容",
+    "empty": {
+      "noPellets": "暂无公开丹药",
+      "subtitle": "成为第一个分享丹药的人"
+    }
+  },
+  "materials": {
+    "title": "我的材料",
+    "subtitle": "管理您的素材库",
+    "addNew": "新增材料",
+    "addNewExpanded": "添加新材料",
+    "hideUpload": "收起",
+    "empty": {
+      "noMaterials": "暂无材料",
+      "noMaterialsSubtitle": "点击上方按钮添加您的第一个材料"
+    },
+    "meta": {
+      "createdAt": "创建于",
+      "fileSize": "文件大小",
+      "type": "类型"
+    },
+    "actions": {
+      "view": "查看",
+      "edit": "编辑",
+      "delete": "删除"
+    }
+  },
+  "features": {
+    "transformMaterials": "将原始材料转化为黄金洞察",
+    "distillKnowledge": "从多个来源蒸馏知识",
+    "createPellets": "创造强大的智慧丹药"
+  },
+  "home": {
+    "title": "保持好奇",
+    "subtitle": "从任何主题的写作者那里发现故事、思考和专业知识",
+    "startReading": "开始阅读",
+    "howItWorks": "HOW IT WORKS",
+    "steps": {
+      "upload": { "title": "上传材料", "desc": "对话记录、PDF 文档、文本笔记——任何形式的原始知识" },
+      "process": { "title": "AI 提炼", "desc": "算法自动提取要点，去除噪声，浓缩核心洞察" },
+      "get":     { "title": "获得丹药", "desc": "精炼后的知识以结构化「丹药」形式呈现，可公开分享" }
+    },
+    "features": {
+      "upload": {
+        "title": "上传材料",
+        "description": "上传对话记录、PDF文档或文本笔记作为AI处理的材料"
+      },
+      "process": {
+        "title": "AI处理",
+        "description": "我们的AI算法从您的内容中提取和精炼技术知识"
+      },
+      "pellets": {
+        "title": "金丹",
+        "description": "将您的材料转化为有价值的\"丹\"（金丹）丹药"
+      }
+    },
+    "cta": {
+      "title": "准备深入了解吗？",
+      "subtitle": "加入数千名读者的行列，他们转向丹炉寻求可靠的见解和新鲜的观点",
+      "getStarted": "开始使用",
+      "browsePellets": "浏览丹药"
+    }
+  },
+  "pellet": {
+    "defaultTitle": "丹药详情",
+    "author": "AI丹师",
+    "visibility": {
+      "label": "可见性",
+      "public": "公开",
+      "private": "私有",
+      "publicHint": "任何人无需登录即可查看"
+    },
+    "actions": {
+      "bookmark": "收藏",
+      "share": "分享",
+      "edit": "编辑"
+    },
+    "empty": "此丹药暂无内容。",
+    "back": "← 返回丹药列表",
+    "loginRequired": {
+      "title": "需要登录",
+      "desc": "此丹药为私有内容，请登录后查看",
+      "browse": "浏览公开丹药"
+    },
+    "loadFailed": "丹药加载失败",
+    "notFound": "丹药未找到",
+    "notFoundDesc": "您要查找的丹药不存在",
+    "browse": "浏览公开丹药",
+    "retry": "重试",
+    "updateFailed": "更新失败，请重试"
+  },
+  "profile": {
+    "title": "个人资料",
+    "description": "管理您的个人账户信息和安全设置",
+    "manageAccount": "管理您的账户信息",
+    "basicInfo": "基本信息",
+    "security": "安全设置",
+    "social": "社交账号",
+    "username": "用户名",
+    "email": "邮箱",
+    "notBound": "未绑定",
+    "phone": "手机号",
+    "registeredAt": "注册时间",
+    "alchemyLevel": "炼金术等级",
+    "verified": "已验证",
+    "notVerified": "未验证",
+    "sendVerificationEmail": "发送验证邮件",
+    "passwordManagement": "密码管理",
+    "currentPassword": "当前密码",
+    "newPassword": "新密码",
+    "confirmNewPassword": "确认新密码",
+    "updatePassword": "更新密码",
+    "forgotPassword": "忘记密码",
+    "emailManagement": "邮箱管理",
+    "newEmail": "新邮箱",
+    "verificationCode": "验证码",
+    "sendCode": "发送验证码",
+    "updateEmail": "更新邮箱",
+    "phoneManagement": "手机号管理",
+    "newPhone": "新手机号",
+    "updatePhone": "更新手机号",
+    "socialAccounts": "社交账号绑定",
+    "boundAt": "绑定于",
+    "unbind": "解绑",
+    "noSocialAccounts": "暂无绑定的社交账号",
+    "passwordsNotMatch": "新密码和确认密码不匹配",
+    "passwordUpdateSuccess": "密码更新成功",
+    "passwordUpdateFailed": "密码更新失败",
+    "emailUpdateSuccess": "邮箱更新成功",
+    "emailUpdateFailed": "邮箱更新失败",
+    "phoneUpdateSuccess": "手机号更新成功",
+    "phoneUpdateFailed": "手机号更新失败",
+    "unbindSuccess": "解绑成功",
+    "unbindFailed": "解绑失败",
+    "pleaseEnterNewEmail": "请先输入新邮箱",
+    "pleaseEnterNewPhone": "请先输入新手机号",
+    "pleaseBindEmail": "请先绑定邮箱地址",
+    "resetEmailSent": "密码重置邮件已发送到您的邮箱",
+    "sendResetEmailFailed": "发送失败",
+    "sendResetEmailFailed2": "发送密码重置邮件失败",
+    "verificationEmailSent": "验证邮件已发送！请检查您的邮箱并点击验证链接。",
+    "sendVerificationEmailFailed": "发送验证邮件失败",
+    "emailCodeSent": "邮箱验证码已发送",
+    "sendEmailCodeFailed": "发送邮箱验证码失败",
+    "phoneCodeSent": "手机验证码已发送",
+    "sendPhoneCodeFailed": "发送手机验证码失败"
+  },
+  "userMenu": {
+    "settings": "个人设置",
+    "materials": "我的材料",
+    "pellets": "我的丹药",
+    "jobs": "我的任务",
+    "logout": "退出登录"
+  },
+  "footer": {
+    "systemName": "丹炉系统",
+    "copyright": "© 2025 丹炉系统. All rights reserved.",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "description": "丹炉系统隐私政策 - 了解我们如何保护您的个人信息和数据隐私",
+    "lastUpdated": "最后更新：2025年1月1日",
+    "overview": "概述",
+    "overviewContent": "丹炉系统（\"我们\"、\"本平台\"）致力于保护您的隐私和个人信息安全。本隐私政策说明了我们如何收集、使用、存储和保护您在使用我们服务时提供的信息。",
+    "infoCollection": "信息收集",
+    "infoTypes": "我们收集的信息类型：",
+    "accountInfo": "账户信息",
+    "accountInfoDesc": "注册时提供的用户名、邮箱地址等基本信息",
+    "uploadedContent": "上传内容",
+    "uploadedContentDesc": "您上传的材料文件、文本内容、图片等数据",
+    "usageData": "使用数据",
+    "usageDataDesc": "您在平台上的活动记录、偏好设置和交互行为",
+    "techInfo": "技术信息",
+    "techInfoDesc": "IP地址、设备信息、浏览器类型等技术数据",
+    "aiResults": "AI处理结果",
+    "aiResultsDesc": "通过AI分析生成的内容和分类结果",
+    "infoUsage": "信息使用",
+    "infoUsageIntro": "我们使用收集的信息用于：",
+    "provideImproveService": "提供和改进我们的AI内容分析服务",
+    "personalizeExperience": "个性化您的用户体验",
+    "processStoreContent": "处理和存储您上传的材料",
+    "generateAiResults": "生成AI分析结果和建议",
+    "maintainSecurity": "维护平台安全和防止滥用",
+    "sendNotifications": "发送服务相关通知",
+    "complyLaws": "遵守法律法规要求",
+    "dataStorage": "数据存储和安全",
+    "dataStorageDesc": "您的数据存储在安全的云服务器上，我们采用行业标准的加密和安全措施保护您的信息。",
+    "storagePeriod": "存储期限",
+    "storagePeriodDesc": "我们会根据服务需要和法律要求保存您的数据。您可以随时要求删除您的账户和相关数据。",
+    "securityMeasures": "安全措施",
+    "securityMeasuresDesc": "我们实施了技术和组织措施来保护您的个人信息免受未经授权的访问、使用或披露。",
+    "infoSharing": "信息共享",
+    "infoSharingIntro": "我们不会出售、出租或以其他方式向第三方披露您的个人信息，除非：",
+    "explicitConsent": "获得您的明确同意",
+    "serviceRequired": "为提供服务所必需（如AI处理服务提供商）",
+    "legalRequirements": "法律法规要求",
+    "protectRights": "保护我们的合法权益",
+    "yourRights": "您的权利",
+    "yourRightsIntro": "您有权：",
+    "accessInfo": "访问和查看您的个人信息",
+    "correctInfo": "更正不准确的信息",
+    "deleteData": "删除您的账户和数据",
+    "restrictProcessing": "限制或反对某些数据处理",
+    "dataPortability": "数据可携带性",
+    "cookies": "Cookie和跟踪技术",
+    "cookiesDesc": "我们使用Cookie和类似技术来改善用户体验、分析使用情况和提供个性化内容。您可以通过浏览器设置管理Cookie偏好。",
+    "policyUpdates": "政策更新",
+    "policyUpdatesDesc": "我们可能会定期更新本隐私政策。重大变更将通过平台通知或电子邮件通知您。继续使用我们的服务即表示您接受更新后的政策。",
+    "contactUs": "联系我们",
+    "contactUsIntro": "如果您对本隐私政策有任何问题或疑虑，请通过以下方式联系我们：",
+    "email": "邮箱",
+    "address": "地址",
+    "footerNote": "本隐私政策依据中华人民共和国相关法律法规制定，包括《个人信息保护法》、《数据安全法》等。"
+  },
+  "terms": {
+    "title": "服务条款",
+    "description": "丹炉系统服务条款 - 了解使用我们平台的条款和条件",
+    "lastUpdated": "最后更新：2025年1月1日",
+    "acceptTerms": "1. 接受条款",
+    "acceptTermsDesc": "欢迎使用丹炉系统！通过访问或使用我们的服务，您同意遵守本服务条款。如果您不同意这些条款，请不要使用我们的服务。",
+    "serviceDescription": "2. 服务描述",
+    "serviceDescriptionIntro": "丹炉系统是一个AI驱动的内容分析和管理平台，提供以下主要功能：",
+    "aiAnalysis": "文档和图片的AI智能分析",
+    "contentClassification": "内容分类和标签管理",
+    "materialUpload": "材料上传和存储服务",
+    "aiGeneratedContent": "AI生成的内容摘要和建议",
+    "personalLibrary": "个人内容库管理",
+    "userResponsibility": "3. 用户责任",
+    "accountSecurity": "3.1 账户安全",
+    "protectAccount": "您有责任保护您的账户信息和密码",
+    "responsibleForActivity": "您对通过您账户进行的所有活动负责",
+    "notifyUnauthorized": "发现未经授权访问时应立即通知我们",
+    "contentResponsibility": "3.2 内容责任",
+    "ownLegalRights": "您对上传的所有内容拥有合法权利",
+    "noInfringement": "确保上传内容不侵犯他人知识产权",
+    "noIllegalContent": "不上传违法、有害或不当的内容",
+    "takeLegalResponsibility": "承担因上传内容而产生的法律责任",
+    "prohibitedActions": "4. 禁止行为",
+    "prohibitedActionsIntro": "使用我们的服务时，您不得：",
+    "noIllegalContent2": "上传违法、诽谤、仇恨言论或不当内容",
+    "noInfringement2": "侵犯他人知识产权、隐私权或其他权利",
+    "noMalware": "传播恶意软件、病毒或其他有害代码",
+    "noUnauthorizedAccess": "尝试未经授权访问系统或其他用户账户",
+    "noDisruption": "干扰或破坏服务的正常运行",
+    "noSpam": "进行商业推广或垃圾信息传播",
+    "noOtherIllegal": "违反相关法律法规的其他行为",
+    "dataUsage": "5. 数据使用和保存",
+    "dataCollection": "5.1 数据收集",
+    "dataCollectionIntro": "我们会收集和保存以下类型的数据：",
+    "uploadedMaterials": "您上传的文档、图片和其他材料",
+    "aiClassification": "AI分析产生的分类、标签和摘要信息",
+    "usagePreferences": "您的使用习惯和偏好数据",
+    "accountContact": "账户信息和联系方式",
+    "dataUsage2": "5.2 数据使用",
+    "dataUsageIntro2": "我们使用您的数据用于：",
+    "provideAnalysisService": "提供AI分析和内容管理服务",
+    "improveAlgorithms": "改进我们的算法和服务质量",
+    "personalizeUserExperience": "个性化用户体验",
+    "complyLaws": "遵守法律法规要求",
+    "intellectualProperty": "6. 知识产权",
+    "yourContent": "您的内容",
+    "yourContentDesc": "您保留对上传内容的所有权利。通过使用我们的服务，您授予我们处理、存储和分析这些内容以提供服务的许可。",
+    "ourService": "我们的服务",
+    "ourServiceDesc": "丹炉系统的软件、算法、界面设计和相关技术受知识产权法保护。",
+    "aiGeneratedContent": "AI生成内容",
+    "aiGeneratedContentDesc": "通过我们的AI系统生成的分析结果和建议，您可以在遵守本条款的前提下使用。",
+    "serviceAvailability": "7. 服务可用性",
+    "serviceAvailabilityDesc": "我们努力保持服务的稳定运行，但不保证服务100%无中断。我们可能会因维护、升级或其他原因暂停服务，并会尽量提前通知。",
+    "accountTermination": "8. 账户终止",
+    "accountTerminationIntro": "在以下情况下，我们可能暂停或终止您的账户：",
+    "violateTerms": "违反本服务条款",
+    "illegalActivity": "从事非法或有害活动",
+    "inactiveAccount": "长期不活跃的账户",
+    "requestDeletion": "您主动要求删除账户",
+    "disclaimer": "9. 免责声明",
+    "disclaimerDesc": "我们的服务基于当前的AI技术提供，AI分析结果仅供参考。我们不对AI分析的准确性、完整性或适用性作出保证。用户应根据自己的判断使用分析结果。",
+    "liabilityLimitation": "10. 责任限制",
+    "liabilityLimitationDesc": "在法律允许的最大范围内，我们不对因使用或无法使用服务而造成的任何间接、偶然、特殊或后果性损害承担责任。",
+    "termsModification": "11. 条款修改",
+    "termsModificationDesc": "我们可能会定期更新这些条款。重大变更将通过平台通知或邮件通知您。继续使用服务即表示接受修改后的条款。",
+    "disputeResolution": "12. 争议解决",
+    "disputeResolutionDesc": "本条款受中华人民共和国法律管辖。因使用服务产生的争议，应通过友好协商解决，协商不成的，可向北京市有管辖权的人民法院起诉。",
+    "contactUs": "13. 联系我们",
+    "contactUsIntro": "如果您对本服务条款有任何问题，请联系我们：",
+    "supportEmail": "邮箱",
+    "supportAddress": "地址",
+    "hotline": "客服热线",
+    "footerNote": "感谢您选择丹炉系统，我们致力于为您提供优质的AI内容分析服务。"
+  },
+  "logo": {
+    "mark": "丹"
+  },
+  "login": {
+    "welcomeBack": "欢迎回来",
+    "emailLogin": "邮箱登录",
+    "phoneLogin": "手机登录",
+    "enterEmail": "请输入邮箱地址",
+    "enterPassword": "请输入密码",
+    "enterPhone": "请输入手机号",
+    "enterCode": "请输入验证码",
+    "verificationCode": "验证码",
+    "send": "发送",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码？",
+    "phoneLoginHint": "首次使用将自动为您创建账号",
+    "loginWithPhone": "手机登录",
+    "loginWithEmail": "邮箱登录",
+    "enterCorrectPhone": "请输入正确的手机号",
+    "sendCodeFailed": "发送验证码失败",
+    "sendCodeRetry": "发送验证码失败，请重试",
+    "enterCode": "请输入验证码",
+    "loginFailed": "登录失败，请重试",
+    "phoneLoginFailed": "手机登录失败，请检查验证码",
+    "getProfileFailed": "获取用户信息失败，请重试",
+    "noAccount": "还没有账号？",
+    "registerNow": "立即注册",
+    "copyright": "© 2025 丹炉系统"
+  },
+  "register": {
+    "createAccount": "创建账号",
+    "username": "用户名",
+    "usernamePlaceholder": "设置您的用户名",
+    "enterEmail": "请输入邮箱地址",
+    "setPassword": "设置密码",
+    "passwordPlaceholder": "创建一个强密码",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "再次输入密码",
+    "registerAccount": "注册账号",
+    "hasAccount": "已有账号？",
+    "loginNow": "立即登录",
+    "passwordsNotMatch": "两次输入的密码不一致",
+    "registerFailed": "注册失败，请重试",
+    "title": "注册 — 丹炉系统",
+    "description": "注册丹炉平台账号",
+    "subtitle": "JOIN THE SYSTEM",
+    "copyright": "© 2025 丹炉系统"
+  }
+}

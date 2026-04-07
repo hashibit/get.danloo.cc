@@ -1,0 +1,27 @@
+[Unit]
+Description=Danloo Process Service
+After=network.target danloo-backend.service danloo-ai-provider.service
+Wants=network.target
+
+[Service]
+Type=simple
+User=danloo
+Group=danloo
+WorkingDirectory=/opt/danloo/process
+EnvironmentFile=/opt/danloo/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/local/bin/uv run uvicorn process.main:app --host 0.0.0.0 --port 8001
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/process.log
+StandardError=append:/var/log/danloo/process.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=full
+ReadWritePaths=/opt/danloo/process /var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

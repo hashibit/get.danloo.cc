@@ -1,0 +1,57 @@
+[project]
+name = "danlooo-backend"
+version = "0.1.0"
+description = "丹炉 (Danlooo) Platform Backend API"
+requires-python = ">=3.11"
+dependencies = [
+    # backend特有依赖
+    "fastapi>=0.68.0",
+    "uvicorn>=0.15.0",
+    "sqlalchemy>=1.4.0",
+    "alembic>=1.7.0",
+    "passlib>=1.7.4",
+    "beautifulsoup4>=4.9.0",
+    "pymysql>=1.0.2",
+    "danloo-common",
+    # Rate limiting and security dependencies
+    "slowapi>=0.1.8",
+    "ipaddress>=1.0.23",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+# Removed workspace reference - using direct path installation in Docker
+
+[tool.pytest.ini_options]
+addopts = "--cov=services --cov=models --cov=database --cov=middleware"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[tool.coverage.run]
+source = ["services", "models", "database", "middleware"]
+omit = [
+    "tests/*",
+    "migrations/*",
+    "workers/*",
+    "venv/*",
+    "env/*"
+]
+
+[tool.uv.sources]
+danloo-common = { workspace = true }
+
+[dependency-groups]
+dev = [
+    # backend特有的dev依赖（如果有的话）
+]

@@ -1,0 +1,15 @@
+{
+  "name": "danloo",
+  "version": "0.1.0",
+  "description": "danloo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n backend,process,ai-proxy,ai-provider,frontend -c cyan,yellow,red,green,white \"uv run backend/main.py\" \"uv run process/main.py\" \"uv run ai-proxy/main.py\" \"DOTENV_PATH=./ai-provider/ai-provider/.env uv run ai-provider/ai-provider/main.py\" \"cd frontend && npm run dev\""
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

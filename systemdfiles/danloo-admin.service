@@ -1,0 +1,31 @@
+[Unit]
+Description=Danloo Admin Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=danloo
+Group=danloo
+WorkingDirectory=/opt/danloo/admin
+EnvironmentFile=/opt/danloo/.env
+Environment=PYTHONUNBUFFERED=1
+Environment="DJANGO_SETTINGS_MODULE=settings"
+# 先同步依赖，再迁移数据库
+ExecStartPre=/usr/local/bin/uv sync
+ExecStartPre=/usr/local/bin/uv run python manage.py migrate --noinput
+ExecStart=/usr/local/bin/uv run python manage.py runserver 0.0.0.0:8003
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/admin.log
+StandardError=append:/var/log/danloo/admin.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=full
+ReadWritePaths=/opt/danloo/admin /var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

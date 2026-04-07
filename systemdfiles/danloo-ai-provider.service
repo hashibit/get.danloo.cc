@@ -1,0 +1,31 @@
+[Unit]
+Description=Danloo AI Provider Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=danloo
+Group=danloo
+WorkingDirectory=/opt/danloo/ai-provider/ai-provider
+EnvironmentFile=/opt/danloo/.env
+Environment=PYTHONUNBUFFERED=1
+# 代理配置 (仅在需要访问国外 API 时启用)
+# Environment=HTTP_PROXY=http://127.0.0.1:9910
+# Environment=HTTPS_PROXY=http://127.0.0.1:9910
+# Environment=NO_PROXY=localhost,127.0.0.1,172.168.70.88
+ExecStart=/usr/local/bin/uv run uvicorn main:app --host 0.0.0.0 --port 8092
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/ai-provider.log
+StandardError=append:/var/log/danloo/ai-provider.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=full
+ReadWritePaths=/opt/danloo/ai-provider /var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

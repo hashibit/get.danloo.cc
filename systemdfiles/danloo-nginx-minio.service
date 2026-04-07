@@ -1,0 +1,25 @@
+[Unit]
+Description=Danloo Nginx Proxy for MinIO CORS
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/sbin/nginx -g 'daemon off;' -c /opt/danloo/systemdfiles/nginx-minio.conf
+ExecReload=/usr/sbin/nginx -s reload -c /opt/danloo/systemdfiles/nginx-minio.conf
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/nginx-minio.log
+StandardError=append:/var/log/danloo/nginx-minio.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=full
+ReadWritePaths=/var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

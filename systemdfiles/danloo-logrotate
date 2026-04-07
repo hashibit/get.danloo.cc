@@ -1,0 +1,17 @@
+/var/log/danloo/*.log {
+    daily
+    missingok
+    rotate 30
+    compress
+    delaycompress
+    notifempty
+    create 644 root root
+    maxsize 500M
+    dateext
+    dateyesterday
+    extension .log
+    sharedscripts
+    postrotate
+        systemctl reload danloo-backend danloo-ai-provider danloo-ai-proxy danloo-process danloo-admin danloo-frontend danloo-nginx danloo-nginx-minio >/dev/null 2>&1 || true
+    endscript
+}

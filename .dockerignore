@@ -1,0 +1,135 @@
+# Docker ignore file for Danloo platform
+# Exclude unnecessary files and directories to reduce image size
+
+# Build artifacts
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+*.so
+*.egg-info
+.eggs
+.venv
+venv
+env
+.venv/
+venv/
+env/
+
+# Test files
+tests/
+*_test.go
+*_test.py
+test_*.py
+*_spec.js
+*_spec.ts
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Documentation
+docs/
+*.md
+*.rst
+*.txt
+LICENSE
+!.dockerignore
+
+# Development tools configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Git files
+.git
+.gitignore
+.gitmodules
+.gitattributes
+
+# Logs
+*.log
+logs/
+log/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python specific
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.coverage
+.coverage.*
+
+# Django specific
+*.sqlite3
+*.sqlite
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Next.js specific
+.next/
+out/
+.nuxt/
+.nuxt/
+
+# Environment files (should be handled via env_file in docker-compose)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# AI Provider specific
+ai-provider/evaluation/
+ai-provider/ai-provider/logs/
+ai-provider/ai-provider/.venv/
+*.lock

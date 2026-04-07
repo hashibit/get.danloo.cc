@@ -1,0 +1,126 @@
+{% extends 'admin_panel/base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1>Admin Dashboard</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-header">Users</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ user_count }}</h5>
+                    <p class="card-text">Total registered users</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Pellets</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ pellet_count }}</h5>
+                    <p class="card-text">Total pellets created</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-header">Materials</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ material_count }}</h5>
+                    <p class="card-text">Total materials uploaded</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-header">Tags</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ tag_count }}</h5>
+                    <p class="card-text">Total tags</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-header">Jobs</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ job_count }}</h5>
+                    <p class="card-text">Total processing jobs</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-secondary mb-3">
+                <div class="card-header">Tasks</div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ task_count }}</h5>
+                    <p class="card-text">Total tasks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Recent Users</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        {% for user in recent_users %}
+                        <li class="list-group-item">
+                            <strong>{{ user.username }}</strong><br>
+                            <small>{{ user.email }}</small><br>
+                            <small class="text-muted">Created: {{ user.created_at }}</small>
+                        </li>
+                        {% empty %}
+                        <li class="list-group-item">No users found</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Recent Pellets</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        {% for pellet in recent_pellets %}
+                        <li class="list-group-item">
+                            <strong>{{ pellet.title|truncatechars:20 }}</strong><br>
+                            <small>by {{ pellet.user.username }}</small><br>
+                            <small class="text-muted">Status: {{ pellet.status }}</small><br>
+                            <small class="text-muted">Created: {{ pellet.created_at }}</small>
+                        </li>
+                        {% empty %}
+                        <li class="list-group-item">No pellets found</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">Recent Materials</div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        {% for material in recent_materials %}
+                        <li class="list-group-item">
+                            <strong>{{ material.title|truncatechars:20 }}</strong><br>
+                            <small>by {{ material.user.username }}</small><br>
+                            <small class="text-muted">Type: {{ material.content_type }}</small><br>
+                            <small class="text-muted">Created: {{ material.created_at }}</small>
+                        </li>
+                        {% empty %}
+                        <li class="list-group-item">No materials found</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

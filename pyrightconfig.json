@@ -1,0 +1,55 @@
+{
+  "pythonVersion": "3.11",
+  "pythonPlatform": "All",
+  
+  // Workspace配置
+  "include": [
+    "backend",
+    "process", 
+    "ai-provider/ai-provider",
+    "common"
+  ],
+  
+  "exclude": [
+    "**/.venv",
+    "**/venv", 
+    "**/__pycache__",
+    "**/node_modules",
+    ".git",
+    "**/.pytest_cache"
+  ],
+
+  // 启用workspace支持
+  "useLibraryCodeForTypes": true,
+  "autoImportCompletions": true,
+  "autoSearchPaths": true,
+  
+  // 虚拟环境路径
+  "venvPath": ".",
+  "venv": ".venv",
+  
+  // 额外的搜索路径
+  "extraPaths": [
+    "./common",
+    "./backend", 
+    "./process",
+    "./ai-provider/ai-provider"
+  ],
+  
+  // 类型检查设置
+  "typeCheckingMode": "basic",
+  "reportMissingImports": "warning",
+  "reportMissingTypeStubs": "none",
+  "reportUnusedImport": "information",
+  "reportUnusedVariable": "information",
+  "reportDuplicateImport": "warning",
+  
+  // 忽略一些常见的工作区问题
+  "reportMissingModuleSource": "none",
+  "reportImportCycles": "none",
+  
+  // 严格模式设置
+  "strict": [
+    "./common"
+  ]
+}

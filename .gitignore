@@ -1,0 +1,77 @@
+*.db
+.states
+__pycache__/
+*.egg-info
+assets/external/
+# SpecStory explanation file
+.specstory/.what-is-this.md
+*.pyc
+*.specstory
+node_modules
+frontend/.next/
+frontend/next-env.d.ts
+
+__snapshots__
+docker-images
+.npm
+logs
+.claude
+
+# =============================================================================
+# 安全敏感文件 - 开源前必须忽略
+# =============================================================================
+# 环境变量文件（包含真实凭证）
+.env
+.env.*
+.env.local
+.env.production
+.env.staging
+.env.development
+!.env.example
+
+# 云服务凭证
+aws-credentials.json
+*-credentials.json
+credentials.json
+
+# 密钥和证书
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# IDE 和编辑器配置（可能包含本地路径）
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS 系统文件
+.DS_Store
+
+# 日志文件（可能包含敏感信息）
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+
+# 数据库文件（开发环境）
+*.sqlite
+*.sqlite3
+
+# Redis dump
+dump.rdb
+
+# 备份文件
+*.backup
+*.old
+
+# 个人笔记和临时文档
+*.private
+NOTES.md
+TODO.private.md

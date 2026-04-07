@@ -1,0 +1,164 @@
+{
+  "Science & Research": {
+    "Natural Sciences": {
+      "Physics & Mathematics": {},
+      "Chemistry & Materials": {},
+      "Biology & Life Sciences": {},
+      "Earth Sciences & Geography": {},
+      "Astronomy & Space Sciences": {}
+    },
+    "Applied Sciences": {
+      "Engineering & Technology": {},
+      "Computer Science & AI": {},
+      "Medical Sciences": {},
+      "Environmental Sciences": {},
+      "Agricultural Sciences": {}
+    },
+    "Research Methods": {
+      "Experimental Design": {},
+      "Data Analysis & Statistics": {},
+      "Academic Writing": {},
+      "Literature Review": {}
+    }
+  },
+  "Technology & Innovation": {
+    "Software Development": {
+      "Programming Languages": {},
+      "Development Frameworks": {},
+      "Software Architecture": {},
+      "DevOps & Deployment": {}
+    },
+    "Emerging Technologies": {
+      "Artificial Intelligence": {},
+      "Blockchain & Web3": {},
+      "Internet of Things": {},
+      "Quantum Computing": {}
+    },
+    "Digital Systems": {
+      "Cloud Computing": {},
+      "Cybersecurity": {},
+      "Database Systems": {},
+      "Network Technologies": {}
+    }
+  },
+  "Business & Economics": {
+    "Business Strategy": {
+      "Strategic Planning": {},
+      "Market Analysis": {},
+      "Competitive Intelligence": {},
+      "Business Models": {}
+    },
+    "Finance & Investment": {
+      "Financial Analysis": {},
+      "Investment Strategies": {},
+      "Risk Management": {},
+      "Cryptocurrency & DeFi": {}
+    },
+    "Operations": {
+      "Project Management": {},
+      "Supply Chain": {},
+      "Quality Management": {},
+      "Process Optimization": {}
+    }
+  },
+  "Education & Learning": {
+    "Academic Subjects": {
+      "STEM Fields": {},
+      "Humanities": {},
+      "Social Sciences": {},
+      "Arts & Creative Studies": {}
+    },
+    "Learning Methods": {
+      "Study Techniques": {},
+      "Online Learning": {},
+      "Skill Development": {},
+      "Language Learning": {}
+    },
+    "Educational Resources": {
+      "Course Materials": {},
+      "Research Papers": {},
+      "Educational Tools": {},
+      "Assessment Methods": {}
+    }
+  },
+  "Health & Medicine": {
+    "Medical Knowledge": {
+      "Clinical Medicine": {},
+      "Preventive Medicine": {},
+      "Mental Health": {},
+      "Nutrition & Wellness": {}
+    },
+    "Healthcare Systems": {
+      "Healthcare Policy": {},
+      "Medical Technology": {},
+      "Patient Care": {},
+      "Public Health": {}
+    },
+    "Research & Development": {
+      "Drug Discovery": {},
+      "Clinical Trials": {},
+      "Medical Devices": {},
+      "Biotechnology": {}
+    }
+  },
+  "Society & Culture": {
+    "Social Sciences": {
+      "Psychology": {},
+      "Sociology": {},
+      "Anthropology": {},
+      "Political Science": {}
+    },
+    "Cultural Studies": {
+      "History": {},
+      "Philosophy": {},
+      "Literature": {},
+      "Art & Design": {}
+    },
+    "Communication": {
+      "Media Studies": {},
+      "Journalism": {},
+      "Public Relations": {},
+      "Digital Communication": {}
+    }
+  },
+  "Personal Development": {
+    "Professional Skills": {
+      "Leadership": {},
+      "Communication Skills": {},
+      "Time Management": {},
+      "Career Development": {}
+    },
+    "Life Skills": {
+      "Financial Literacy": {},
+      "Health & Fitness": {},
+      "Relationships": {},
+      "Productivity": {}
+    },
+    "Creative Skills": {
+      "Writing": {},
+      "Design": {},
+      "Music": {},
+      "Visual Arts": {}
+    }
+  },
+  "Industry Knowledge": {
+    "Manufacturing": {
+      "Production Processes": {},
+      "Quality Control": {},
+      "Industrial Engineering": {},
+      "Automation": {}
+    },
+    "Services": {
+      "Consulting": {},
+      "Marketing": {},
+      "Customer Service": {},
+      "Hospitality": {}
+    },
+    "Emerging Sectors": {
+      "Renewable Energy": {},
+      "Sustainability": {},
+      "Digital Economy": {},
+      "Space Industry": {}
+    }
+  }
+}

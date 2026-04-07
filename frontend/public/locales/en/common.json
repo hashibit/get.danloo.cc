@@ -1,0 +1,601 @@
+{
+  "brand": {
+    "name": "Danloo",
+    "tagline": "Your AI-powered knowledge distillery",
+    "description": "Transform raw materials into golden insights"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "materials": "My Materials",
+    "myPellets": "My Pellets",
+    "myJobs": "My Jobs",
+    "pellets": "Pellets",
+    "create": "Create",
+    "explore": "Explore",
+    "upload": "Upload"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "email": "Email address",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot your password?",
+    "welcomeBack": "Welcome back",
+    "signInPrompt": "Please sign in to your account",
+    "newToDanloo": "New to Danloo?",
+    "createAccount": "Create your account",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "loginRequired": "Login Required",
+    "loginRequiredMessage": "You need to be logged in to upload materials.",
+    "goToLogin": "Go to Login"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcomeTitle": "Welcome to Danloo",
+    "welcomeSubtitle": "Your AI-powered knowledge distillery is ready to transform raw materials into golden insights",
+    "stats": {
+      "totalPellets": "Total Pellets",
+      "goldenPellets": "Golden Pellets",
+      "materials": "Materials"
+    },
+    "sections": {
+      "recentMaterials": "Recent Materials",
+      "recentPellets": "Recent Pellets",
+      "viewAll": "View All"
+    },
+    "empty": {
+      "noMaterials": "No materials yet",
+      "uploadFirst": "Upload Your First Material",
+      "noPellets": "No pellets generated yet",
+      "createFirst": "Create Your First Pellet"
+    },
+    "actions": {
+      "tryAgain": "Try Again",
+      "read": "Read",
+      "share": "Share"
+    }
+  },
+  "upload": {
+    "title": "Upload Materials",
+    "subtitle": "Select input method to start uploading",
+    "selectInputType": "Select input method",
+    "maxSize": "Max size",
+    "inputTypes": {
+      "file": {
+        "name": "Upload File",
+        "description": "Support text, PDF, images and more formats"
+      },
+      "url": {
+        "name": "Web Link",
+        "description": "Enter webpage URL to automatically fetch content"
+      },
+      "textPaste": {
+        "name": "Paste Text",
+        "description": "Directly input or paste text content"
+      }
+    },
+    "urlForm": {
+      "title": "Web Link Upload",
+      "titlePlaceholder": "Enter material title...",
+      "urlLabel": "Web Link",
+      "urlPlaceholder": "https://example.com/article",
+      "submitButton": "Fetch and Upload"
+    },
+    "textForm": {
+      "title": "Text Content Upload",
+      "titlePlaceholder": "Enter material title...",
+      "contentLabel": "Text Content",
+      "contentPlaceholder": "Enter or paste your text content here...",
+      "submitButton": "Upload Text"
+    },
+    "fileTypes": {
+      "text": {
+        "name": "Plain Text",
+        "description": "Text documents, notes, conversation records"
+      },
+      "pdf": {
+        "name": "PDF Document",
+        "description": "PDF format documents and materials"
+      },
+      "image": {
+        "name": "Image Files",
+        "description": "Photos, screenshots, charts and other images"
+      }
+    },
+    "form": {
+      "materialTitle": "Material Title",
+      "contentType": "Content Type",
+      "uploadFile": "Upload File",
+      "publishMaterial": "Publish Material",
+      "uploading": "Uploading...",
+      "publishing": "Publishing...",
+      "uploadNow": "Upload now"
+    },
+    "contentTypes": {
+      "conversation": "Conversation Record",
+      "pdf": "PDF Document",
+      "textNote": "Text Note"
+    },
+    "messages": {
+      "uploadSuccess": "Material uploaded successfully!",
+      "fileUploadError": "File upload error",
+      "fileSelected": "File selected",
+      "uploadSuccessful": "Uploaded successfully",
+      "uploadFailed": "Upload failed",
+      "checkingAuth": "Checking authentication...",
+      "urlAndTitleRequired": "Please enter both web link and title",
+      "textAndTitleRequired": "Please enter both text content and title"
+    }
+  },
+  "create": {
+    "title": "Alchemy Workshop",
+    "subtitle": "Combine materials to create powerful pellets",
+    "alchemyWorkbench": "AI Alchemist Workbench",
+    "materialsInFurnace": "{{count}} material(s) added, ready to refine",
+    "selectFromLibrary": "Select materials from the library on the right",
+    "furnaceStandby": "Furnace on standby",
+    "selectFromRight": "Please select materials from the right to start",
+    "alchemyWorking": "AI Alchemist working...",
+    "startAlchemyWithCount": "Start Alchemy ({{count}})",
+    "materialLibrary": "Material Library",
+    "searchMaterials": "Search materials...",
+    "noMatchingMaterials": "No matching materials found",
+    "noAvailableMaterials": "No materials available",
+    "form": {
+      "pelletTitle": "Pellet Title",
+      "pelletTitlePlaceholder": "Enter pellet title...",
+      "selectedMaterials": "Selected Materials",
+      "availableMaterials": "Available Materials",
+      "uploadNewMaterial": "Add New Material",
+      "materialTitle": "Material Title",
+      "materialTitlePlaceholder": "Material title...",
+      "cancel": "Cancel",
+      "upload": "Upload"
+    },
+    "actions": {
+      "startAlchemy": "Start Alchemy",
+      "alchemyInProgress": "Alchemy in Progress..."
+    },
+    "empty": {
+      "noMaterialsSelected": "No materials selected",
+      "selectFromPanel": "Select materials from the panel on the right",
+      "noMaterialsAvailable": "No materials available"
+    },
+    "pelletConfig": "Pellet Configuration",
+    "uploadForm": {
+      "title": "Upload New Material",
+      "uploading": "Uploading..."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "update": "Update",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "date": "Date",
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "actions": "Actions",
+    "networkError": "Network error occurred"
+  },
+  "pellets": {
+    "title": "Your Pellets",
+    "subtitle": "Discover and manage your generated pellets",
+    "search": {
+      "placeholder": "Search pellets...",
+      "clear": "Clear"
+    },
+    "meta": {
+      "author": "AI Assistant",
+      "readTime": "min read",
+      "createdAt": "Created at",
+      "dateMonth": "year",
+      "defaultSummary": "This pellet provides comprehensive insights on the topic, offering valuable perspectives and actionable advice for readers interested in exploring the subject further."
+    },
+    "actions": {
+      "view": "View",
+      "bookmark": "Bookmark",
+      "share": "Share"
+    },
+    "empty": {
+      "noPellets": "No pellets found",
+      "noPelletsSubtitle": "Start creating your first pellet"
+    },
+    "tags": {
+      "normal": "Normal",
+      "special": "Special",
+      "golden": "Golden",
+      "public": "Public"
+    },
+    "card": {
+      "alchemist": "AI Alchemist",
+      "retry": "Retry",
+      "star": "★"
+    }
+  },
+  "myPellets": {
+    "title": "My Pellets",
+    "subtitle": "Manage all your created pellets"
+  },
+  "myJobs": {
+    "title": "My Jobs",
+    "description": "Manage your alchemy jobs and progress",
+    "refresh": "↺ Refresh",
+    "startAlchemy": "Start Alchemy",
+    "retry": "Retry",
+    "retrySuccess": "Job retried successfully! The job will restart processing.",
+    "retryFailed": "Failed to retry job, please try again",
+    "statusFilter": {
+      "all": "All",
+      "pending": "Pending",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    },
+    "table": {
+      "status": "Status",
+      "createdAt": "Created At",
+      "actions": "Actions"
+    },
+    "empty": {
+      "noJobs": "No jobs yet",
+      "noMatch": "No matching jobs"
+    },
+    "count": "Showing {{shown}} / {{total}} jobs"
+  },
+  "explore": {
+    "title": "Explore Pellets",
+    "subtitle": "Discover quality content shared by the community",
+    "empty": {
+      "noPellets": "No public pellets available",
+      "subtitle": "Be the first to share a pellet"
+    }
+  },
+  "materials": {
+    "title": "My Materials",
+    "subtitle": "Manage your material library",
+    "addNew": "Add Material",
+    "addNewExpanded": "Add New Material",
+    "hideUpload": "Hide",
+    "empty": {
+      "noMaterials": "No materials yet",
+      "noMaterialsSubtitle": "Click the button above to add your first material"
+    },
+    "meta": {
+      "createdAt": "Created at",
+      "fileSize": "File size",
+      "type": "Type"
+    },
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete"
+    }
+  },
+  "home": {
+    "title": "Stay Curious",
+    "subtitle": "Discover stories, thinking, and expertise from writers on any topic",
+    "startReading": "Start Reading",
+    "howItWorks": "HOW IT WORKS",
+    "steps": {
+      "upload": { "title": "Upload Materials", "desc": "Conversation records, PDFs, text notes — any form of raw knowledge" },
+      "process": { "title": "AI Refinement", "desc": "Algorithms extract key points, remove noise, and condense core insights" },
+      "get":     { "title": "Get Pellets", "desc": "Refined knowledge presented in structured pellet form, shareable publicly" }
+    },
+    "features": {
+      "upload": {
+        "title": "Upload Materials",
+        "description": "Upload conversation records, PDF documents, or text notes as materials for AI processing"
+      },
+      "process": {
+        "title": "AI Processing",
+        "description": "Our AI algorithms extract and refine technical knowledge from your content"
+      },
+      "pellets": {
+        "title": "Golden Pellets",
+        "description": "Transform your materials into valuable 'Dan' (Golden Pill) pellets"
+      }
+    },
+    "cta": {
+      "title": "Ready to dive deeper?",
+      "subtitle": "Join thousands of readers who turn to Danloo for reliable insights and fresh perspectives",
+      "getStarted": "Get Started",
+      "browsePellets": "Browse Pellets"
+    }
+  },
+  "features": {
+    "transformMaterials": "Transform raw materials into golden insights",
+    "distillKnowledge": "Distill knowledge from multiple sources",
+    "createPellets": "Create powerful pellets of wisdom"
+  },
+  "pellet": {
+    "defaultTitle": "Pellet Detail",
+    "author": "AI Alchemist",
+    "visibility": {
+      "label": "VISIBILITY",
+      "public": "Public",
+      "private": "Private",
+      "publicHint": "Anyone can view without logging in"
+    },
+    "actions": {
+      "bookmark": "Bookmark",
+      "share": "Share",
+      "edit": "Edit"
+    },
+    "empty": "This pellet has no content yet.",
+    "back": "← Back to Pellets",
+    "loginRequired": {
+      "title": "Login Required",
+      "desc": "This pellet is private. Please log in to view it.",
+      "browse": "Browse Public Pellets"
+    },
+    "loadFailed": "Failed to load pellet",
+    "notFound": "Pellet Not Found",
+    "notFoundDesc": "The pellet you're looking for doesn't exist.",
+    "browse": "Browse Public Pellets",
+    "retry": "Retry",
+    "updateFailed": "Update failed, please try again"
+  },
+  "profile": {
+    "title": "Profile",
+    "description": "Manage your personal account information and security settings",
+    "manageAccount": "Manage your account information",
+    "basicInfo": "Basic Info",
+    "security": "Security",
+    "social": "Social",
+    "username": "Username",
+    "email": "Email",
+    "notBound": "Not bound",
+    "phone": "Phone",
+    "registeredAt": "Registered At",
+    "alchemyLevel": "Alchemy Level",
+    "verified": "Verified",
+    "notVerified": "Not Verified",
+    "sendVerificationEmail": "Send Verification Email",
+    "passwordManagement": "Password Management",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "updatePassword": "Update Password",
+    "forgotPassword": "Forgot Password",
+    "emailManagement": "Email Management",
+    "newEmail": "New Email",
+    "verificationCode": "Verification Code",
+    "sendCode": "Send Code",
+    "updateEmail": "Update Email",
+    "phoneManagement": "Phone Management",
+    "newPhone": "New Phone",
+    "updatePhone": "Update Phone",
+    "socialAccounts": "Social Accounts",
+    "boundAt": "Bound at",
+    "unbind": "Unbind",
+    "noSocialAccounts": "No social accounts bound",
+    "passwordsNotMatch": "New password and confirm password do not match",
+    "passwordUpdateSuccess": "Password updated successfully",
+    "passwordUpdateFailed": "Password update failed",
+    "emailUpdateSuccess": "Email updated successfully",
+    "emailUpdateFailed": "Email update failed",
+    "phoneUpdateSuccess": "Phone updated successfully",
+    "phoneUpdateFailed": "Phone update failed",
+    "unbindSuccess": "Unbind successful",
+    "unbindFailed": "Unbind failed",
+    "pleaseEnterNewEmail": "Please enter new email first",
+    "pleaseEnterNewPhone": "Please enter new phone first",
+    "pleaseBindEmail": "Please bind email address first",
+    "resetEmailSent": "Password reset email has been sent to your email",
+    "sendResetEmailFailed": "Send failed",
+    "sendResetEmailFailed2": "Failed to send password reset email",
+    "verificationEmailSent": "Verification email sent! Please check your email and click the verification link.",
+    "sendVerificationEmailFailed": "Failed to send verification email",
+    "emailCodeSent": "Email verification code sent",
+    "sendEmailCodeFailed": "Failed to send email verification code",
+    "phoneCodeSent": "Phone verification code sent",
+    "sendPhoneCodeFailed": "Failed to send phone verification code"
+  },
+  "userMenu": {
+    "settings": "Settings",
+    "materials": "My Materials",
+    "pellets": "My Pellets",
+    "jobs": "My Jobs",
+    "logout": "Logout"
+  },
+  "footer": {
+    "systemName": "Danloo System",
+    "copyright": "© 2025 Danloo System. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "Danloo System Privacy Policy - Learn how we protect your personal information and data privacy",
+    "lastUpdated": "Last updated: January 1, 2025",
+    "overview": "Overview",
+    "overviewContent": "Danloo System ('we', 'this platform') is committed to protecting your privacy and personal information security. This privacy policy explains how we collect, use, store, and protect the information you provide when using our services.",
+    "infoCollection": "Information Collection",
+    "infoTypes": "Types of information we collect:",
+    "accountInfo": "Account Information",
+    "accountInfoDesc": "Basic information such as username and email address provided during registration",
+    "uploadedContent": "Uploaded Content",
+    "uploadedContentDesc": "Your uploaded material files, text content, images, and other data",
+    "usageData": "Usage Data",
+    "usageDataDesc": "Your activity records, preferences, and interaction behaviors on the platform",
+    "techInfo": "Technical Information",
+    "techInfoDesc": "Technical data such as IP address, device information, browser type, etc.",
+    "aiResults": "AI Processing Results",
+    "aiResultsDesc": "Content and classification results generated through AI analysis",
+    "infoUsage": "Information Usage",
+    "infoUsageIntro": "We use the collected information to:",
+    "provideImproveService": "Provide and improve our AI content analysis services",
+    "personalizeExperience": "Personalize your user experience",
+    "processStoreContent": "Process and store your uploaded materials",
+    "generateAiResults": "Generate AI analysis results and recommendations",
+    "maintainSecurity": "Maintain platform security and prevent abuse",
+    "sendNotifications": "Send service-related notifications",
+    "complyLaws": "Comply with legal and regulatory requirements",
+    "dataStorage": "Data Storage and Security",
+    "dataStorageDesc": "Your data is stored on secure cloud servers, and we use industry-standard encryption and security measures to protect your information.",
+    "storagePeriod": "Storage Period",
+    "storagePeriodDesc": "We will retain your data based on service needs and legal requirements. You may request the deletion of your account and related data at any time.",
+    "securityMeasures": "Security Measures",
+    "securityMeasuresDesc": "We have implemented technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure.",
+    "infoSharing": "Information Sharing",
+    "infoSharingIntro": "We will not sell, rent, or otherwise disclose your personal information to third parties, unless:",
+    "explicitConsent": "We obtain your explicit consent",
+    "serviceRequired": "Required to provide services (such as AI processing service providers)",
+    "legalRequirements": "Required by laws and regulations",
+    "protectRights": "To protect our legitimate rights",
+    "yourRights": "Your Rights",
+    "yourRightsIntro": "You have the right to:",
+    "accessInfo": "Access and view your personal information",
+    "correctInfo": "Correct inaccurate information",
+    "deleteData": "Delete your account and data",
+    "restrictProcessing": "Restrict or object to certain data processing",
+    "dataPortability": "Data portability",
+    "cookies": "Cookies and Tracking Technologies",
+    "cookiesDesc": "We use cookies and similar technologies to improve user experience, analyze usage, and provide personalized content. You can manage cookie preferences through your browser settings.",
+    "policyUpdates": "Policy Updates",
+    "policyUpdatesDesc": "We may update this privacy policy periodically. Significant changes will be notified to you through platform notifications or email. Continued use of our services indicates your acceptance of the updated policy.",
+    "contactUs": "Contact Us",
+    "contactUsIntro": "If you have any questions or concerns about this privacy policy, please contact us:",
+    "email": "Email",
+    "address": "Address",
+    "footerNote": "This privacy policy is formulated in accordance with relevant laws and regulations of the People's Republic of China, including the Personal Information Protection Law, Data Security Law, etc."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "Danloo System Terms of Service - Learn about the terms and conditions of using our platform",
+    "lastUpdated": "Last updated: January 1, 2025",
+    "acceptTerms": "1. Acceptance of Terms",
+    "acceptTermsDesc": "Welcome to Danloo System! By accessing or using our services, you agree to abide by these terms of service. If you do not agree to these terms, please do not use our services.",
+    "serviceDescription": "2. Service Description",
+    "serviceDescriptionIntro": "Danloo System is an AI-driven content analysis and management platform that provides the following main features:",
+    "aiAnalysis": "AI-powered analysis of documents and images",
+    "contentClassification": "Content classification and tag management",
+    "materialUpload": "Material upload and storage services",
+    "aiGeneratedContent": "AI-generated content summaries and recommendations",
+    "personalLibrary": "Personal content library management",
+    "userResponsibility": "3. User Responsibilities",
+    "accountSecurity": "3.1 Account Security",
+    "protectAccount": "You are responsible for protecting your account information and password",
+    "responsibleForActivity": "You are responsible for all activities conducted through your account",
+    "notifyUnauthorized": "Notify us immediately if you discover unauthorized access",
+    "contentResponsibility": "3.2 Content Responsibility",
+    "ownLegalRights": "You own all legal rights to all content you upload",
+    "noInfringement": "Ensure uploaded content does not infringe on others' intellectual property",
+    "noIllegalContent": "Do not upload illegal, harmful, or inappropriate content",
+    "takeLegalResponsibility": "Bear legal responsibility arising from uploaded content",
+    "prohibitedActions": "4. Prohibited Actions",
+    "prohibitedActionsIntro": "When using our services, you must not:",
+    "noIllegalContent2": "Upload illegal, defamatory, hate speech, or inappropriate content",
+    "noInfringement2": "Infringe on others' intellectual property, privacy, or other rights",
+    "noMalware": "Spread malware, viruses, or other harmful code",
+    "noUnauthorizedAccess": "Attempt to access the system or other user accounts without authorization",
+    "noDisruption": "Interfere with or disrupt the normal operation of services",
+    "noSpam": "Engage in commercial promotion or spam dissemination",
+    "noOtherIllegal": "Other actions that violate relevant laws and regulations",
+    "dataUsage": "5. Data Usage and Storage",
+    "dataCollection": "5.1 Data Collection",
+    "dataCollectionIntro": "We collect and store the following types of data:",
+    "uploadedMaterials": "Documents, images, and other materials you upload",
+    "aiClassification": "Classification, tags, and summary information generated by AI analysis",
+    "usagePreferences": "Your usage habits and preference data",
+    "accountContact": "Account information and contact details",
+    "dataUsage2": "5.2 Data Usage",
+    "dataUsageIntro2": "We use your data to:",
+    "provideAnalysisService": "Provide AI analysis and content management services",
+    "improveAlgorithms": "Improve our algorithms and service quality",
+    "personalizeUserExperience": "Personalize user experience",
+    "complyLaws": "Comply with legal and regulatory requirements",
+    "intellectualProperty": "6. Intellectual Property",
+    "yourContent": "Your Content",
+    "yourContentDesc": "You retain all rights to uploaded content. By using our services, you grant us a license to process, store, and analyze this content to provide services.",
+    "ourService": "Our Service",
+    "ourServiceDesc": "Danloo System's software, algorithms, interface design, and related technologies are protected by intellectual property laws.",
+    "aiGeneratedContent": "AI Generated Content",
+    "aiGeneratedContentDesc": "Analysis results and recommendations generated through our AI system may be used by you subject to compliance with these terms.",
+    "serviceAvailability": "7. Service Availability",
+    "serviceAvailabilityDesc": "We strive to maintain stable service operation but do not guarantee 100% uptime. We may suspend services for maintenance, upgrades, or other reasons and will provide advance notice when possible.",
+    "accountTermination": "8. Account Termination",
+    "accountTerminationIntro": "We may suspend or terminate your account in the following situations:",
+    "violateTerms": "Violate these terms of service",
+    "illegalActivity": "Engage in illegal or harmful activities",
+    "inactiveAccount": "Long-term inactive accounts",
+    "requestDeletion": "You request account deletion",
+    "disclaimer": "9. Disclaimer",
+    "disclaimerDesc": "Our services are provided based on current AI technology, and AI analysis results are for reference only. We make no guarantees about the accuracy, completeness, or applicability of AI analysis. Users should use analysis results based on their own judgment.",
+    "liabilityLimitation": "10. Liability Limitation",
+    "liabilityLimitationDesc": "To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, or consequential damages resulting from the use or inability to use the services.",
+    "termsModification": "11. Terms Modification",
+    "termsModificationDesc": "We may update these terms periodically. Significant changes will be notified to you through platform notifications or email. Continued use of services indicates acceptance of the modified terms.",
+    "disputeResolution": "12. Dispute Resolution",
+    "disputeResolutionDesc": "These terms are governed by the laws of the People's Republic of China. Disputes arising from the use of services should be resolved through friendly negotiation. If negotiation fails, you may file a lawsuit with a competent people's court in Beijing.",
+    "contactUs": "13. Contact Us",
+    "contactUsIntro": "If you have any questions about these terms of service, please contact us:",
+    "supportEmail": "Email",
+    "supportAddress": "Address",
+    "hotline": "Customer Service Hotline",
+    "footerNote": "Thank you for choosing Danloo System, and we are committed to providing you with high-quality AI content analysis services."
+  },
+  "logo": {
+    "mark": "Pe"
+  },
+  "login": {
+    "welcomeBack": "Welcome Back",
+    "emailLogin": "Email Login",
+    "phoneLogin": "Phone Login",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password",
+    "enterPhone": "Enter phone number",
+    "enterCode": "Enter verification code",
+    "verificationCode": "Verification Code",
+    "send": "Send",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "phoneLoginHint": "First time use will automatically create an account",
+    "loginWithPhone": "Phone Login",
+    "loginWithEmail": "Email Login",
+    "enterCorrectPhone": "Please enter a valid phone number",
+    "sendCodeFailed": "Failed to send verification code",
+    "sendCodeRetry": "Failed to send code, please try again",
+    "enterCode": "Please enter verification code",
+    "loginFailed": "Login failed, please try again",
+    "phoneLoginFailed": "Phone login failed, please check the code",
+    "getProfileFailed": "Failed to get user profile, please try again",
+    "noAccount": "Don't have an account?",
+    "registerNow": "Register now",
+    "copyright": "© 2025 Danloo System"
+  },
+  "register": {
+    "createAccount": "Create Account",
+    "username": "Username",
+    "usernamePlaceholder": "Set your username",
+    "enterEmail": "Enter your email",
+    "setPassword": "Set Password",
+    "passwordPlaceholder": "Create a strong password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Enter password again",
+    "registerAccount": "Register Account",
+    "hasAccount": "Already have an account?",
+    "loginNow": "Login now",
+    "passwordsNotMatch": "Passwords do not match",
+    "registerFailed": "Registration failed, please try again",
+    "title": "Register — Danloo System",
+    "description": "Register for a Danloo platform account",
+    "subtitle": "JOIN THE SYSTEM",
+    "copyright": "© 2025 Danloo System"
+  }
+}

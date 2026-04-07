@@ -1,0 +1,28 @@
+[Unit]
+Description=Danloo Backend Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=danloo
+Group=danloo
+WorkingDirectory=/opt/danloo/backend
+EnvironmentFile=/opt/danloo/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/opt/danloo/systemdfiles/backend-migrate.sh
+ExecStart=/usr/local/bin/uv run uvicorn main:app --host 0.0.0.0 --port 8000
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/backend.log
+StandardError=append:/var/log/danloo/backend.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=full
+ReadWritePaths=/opt/danloo/backend /var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,22 @@
+[project]
+name = "danloo-admin"
+version = "1.0.0"
+description = "Danloo admin panel for managing system components"
+requires-python = ">=3.11"
+dependencies = [
+    "Django>=4.2.0,<5.0.0",
+    "mysqlclient>=2.2.7",
+    "dj-database-url>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["admin"]

@@ -1,0 +1,11 @@
+.specstory/
+..cursorindexingignore
+.cursorindexingignore
+*.log
+*.pyc
+.DS_Store
+.DS_Store
+sdk/java/target
+*.class
+.idea
+*.mp4

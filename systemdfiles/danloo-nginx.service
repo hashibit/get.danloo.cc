@@ -1,0 +1,25 @@
+[Unit]
+Description=Danloo Nginx Reverse Proxy (Main)
+After=network.target danloo-frontend.service danloo-backend.service
+Wants=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/sbin/nginx -g 'daemon off;'
+ExecReload=/usr/sbin/nginx -s reload
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/nginx.log
+StandardError=append:/var/log/danloo/nginx.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=full
+ReadWritePaths=/var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

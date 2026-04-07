@@ -1,0 +1,27 @@
+[Unit]
+Description=Danloo Frontend Service
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=danloo
+Group=danloo
+WorkingDirectory=/opt/danloo/frontend
+EnvironmentFile=/opt/danloo/.env
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/danloo/frontend.log
+StandardError=append:/var/log/danloo/frontend.log
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=false
+ProtectSystem=strict
+ReadWritePaths=/opt/danloo/frontend
+ReadWritePaths=/var/log/danloo
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,30 @@
+[project]
+name = "ai-proxy"
+version = "0.1.0"
+description = "AI Proxy Service for processing materials with S3 integration"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+dependencies = [
+    "fastapi>=0.68.0",
+    "uvicorn>=0.15.0",
+    "boto3>=1.26.0",
+    "python-multipart>=0.0.5",
+    "cryptography>=3.4.8",
+    "httpx>=0.23.0",
+    "sqlalchemy>=1.4.0",
+    "anthropic>=0.40.0",  # Anthropic Claude API 支持
+    "danloo-common",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_proxy*"]
+
+# Removed workspace reference - using direct path installation in Docker
