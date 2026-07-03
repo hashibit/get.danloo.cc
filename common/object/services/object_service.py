@@ -76,7 +76,7 @@ class ObjectService:
             # 使用 s3v4 签名（阿里云 OSS 等 S3 兼容服务需要）
             s3_config = Config(
                 signature_version="s3v4",
-                s3={"addressing_style": "path"},
+                s3={"addressing_style": "virtual"},
             )
 
             self.s3_client = boto3.client(
