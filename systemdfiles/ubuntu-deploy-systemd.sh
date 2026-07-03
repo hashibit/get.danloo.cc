@@ -33,9 +33,9 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Check if environment file exists
-if [ ! -f "/opt/danloo/.env" ]; then
-    print_error "Environment file /opt/danloo/.env not found"
-    print_error "Please create it from /opt/danloo/.env.example"
+if [ ! -f "/opt/danloo/get.danloo.cc/.env" ]; then
+    print_error "Environment file /opt/danloo/get.danloo.cc/.env not found"
+    print_error "Please create it from /opt/danloo/get.danloo.cc/.env.example"
     exit 1
 fi
 
@@ -49,12 +49,12 @@ chmod 644 /var/log/danloo/*.log
 
 # Set up logrotate configuration
 print_status "Setting up logrotate configuration..."
-cp /opt/danloo/systemdfiles/danloo-logrotate /etc/logrotate.d/danloo
+cp /opt/danloo/get.danloo.cc/systemdfiles/danloo-logrotate /etc/logrotate.d/danloo
 chmod 644 /etc/logrotate.d/danloo
 
 # Sync Python dependencies using uv workspace
 print_status "Syncing Python dependencies..."
-cd /opt/danloo
+cd /opt/danloo/get.danloo.cc
 /usr/local/bin/uv sync
 
 # Reload systemd daemon to pick up new service files

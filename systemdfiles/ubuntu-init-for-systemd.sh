@@ -161,11 +161,11 @@ else
 fi
 
 # Create directory structure
-print_status "Setting up /opt/danloo directory..."
-if [ -L "/opt/danloo" ]; then
-    # /opt/danloo is a symbolic link
-    REAL_PATH=$(readlink -f /opt/danloo)
-    print_status "/opt/danloo is a symbolic link to $REAL_PATH"
+print_status "Setting up /opt/danloo/get.danloo.cc directory..."
+if [ -L "/opt/danloo/get.danloo.cc" ]; then
+    # /opt/danloo/get.danloo.cc is a symbolic link
+    REAL_PATH=$(readlink -f /opt/danloo/get.danloo.cc)
+    print_status "/opt/danloo/get.danloo.cc is a symbolic link to $REAL_PATH"
 
     # Check if target exists
     if [ ! -d "$REAL_PATH" ]; then
@@ -174,7 +174,7 @@ if [ -L "/opt/danloo" ]; then
     fi
 
     # Ensure danloo user owns the symlink
-    chown -h danloo:danloo /opt/danloo
+    chown -h danloo:danloo /opt/danloo/get.danloo.cc
 
     # Check if symlink points to a /home directory
     if [[ "$REAL_PATH" == /home/* ]]; then
@@ -203,15 +203,15 @@ if [ -L "/opt/danloo" ]; then
     sudo -u danloo mkdir -p "$REAL_PATH/frontend/node_modules/.cache" 2>/dev/null || true
 
 else
-    # /opt/danloo is not a symlink, create directory structure
-    print_status "Creating directory structure at /opt/danloo..."
-    mkdir -p /opt/danloo/{frontend,backend,ai-provider,process,ai-proxy,admin,common,systemdfiles,nginx}
-    mkdir -p /opt/danloo/frontend/.next
-    mkdir -p /opt/danloo/frontend/node_modules
+    # /opt/danloo/get.danloo.cc is not a symlink, create directory structure
+    print_status "Creating directory structure at /opt/danloo/get.danloo.cc..."
+    mkdir -p /opt/danloo/get.danloo.cc/{frontend,backend,ai-provider,process,ai-proxy,admin,common,systemdfiles,nginx}
+    mkdir -p /opt/danloo/get.danloo.cc/frontend/.next
+    mkdir -p /opt/danloo/get.danloo.cc/frontend/node_modules
 
     # Set ownership
-    chown -R danloo:danloo /opt/danloo
-    chmod 755 /opt/danloo
+    chown -R danloo:danloo /opt/danloo/get.danloo.cc
+    chmod 755 /opt/danloo/get.danloo.cc
 fi
 
 # 创建日志目录
@@ -220,9 +220,9 @@ mkdir -p /var/log/danloo
 chown -R danloo:danloo /var/log/danloo
 
 # Set .env permissions if it exists
-if [ -f "/opt/danloo/.env" ]; then
-    chmod 600 /opt/danloo/.env
-    chown danloo:danloo /opt/danloo/.env
+if [ -f "/opt/danloo/get.danloo.cc/.env" ]; then
+    chmod 600 /opt/danloo/get.danloo.cc/.env
+    chown danloo:danloo /opt/danloo/get.danloo.cc/.env
 fi
 
 # Configure firewall (只开放必要的公网端口，内部服务通过 nginx 反向代理)
@@ -345,10 +345,10 @@ health_check() {
     fi
 
     # 检查目录
-    if [ -d "/opt/danloo" ] || [ -L "/opt/danloo" ]; then
-        print_status "✓ /opt/danloo exists"
+    if [ -d "/opt/danloo/get.danloo.cc" ] || [ -L "/opt/danloo/get.danloo.cc" ]; then
+        print_status "✓ /opt/danloo/get.danloo.cc exists"
     else
-        print_error "✗ /opt/danloo not found"
+        print_error "✗ /opt/danloo/get.danloo.cc not found"
         all_ok=false
     fi
 
@@ -381,11 +381,11 @@ health_check
 print_status "System initialization completed! 🎉"
 echo ""
 print_status "Next steps:"
-echo "1. Copy your application code to /opt/danloo/"
-echo "2. Configure /opt/danloo/.env (copy from .env.aliyun)"
+echo "1. Copy your application code to /opt/danloo/get.danloo.cc/"
+echo "2. Configure /opt/danloo/get.danloo.cc/.env (copy from .env.aliyun)"
 echo "3. Install application dependencies:"
-echo "   - Frontend: cd /opt/danloo/frontend && npm install && npm run build"
-echo "   - Backend services: cd /opt/danloo/backend && uv sync"
+echo "   - Frontend: cd /opt/danloo/get.danloo.cc/frontend && npm install && npm run build"
+echo "   - Backend services: cd /opt/danloo/get.danloo.cc/backend && uv sync"
 echo "4. Start services: systemctl start danloo-frontend danloo-backend etc."
 echo "5. Enable services on boot: systemctl enable danloo-frontend danloo-backend etc."
 echo "6. Configure HTTPS: certbot --nginx -d danloo.cc -d www.danloo.cc"
