@@ -6,17 +6,17 @@
 set -e
 
 # Change to backend directory
-cd /opt/danloo/backend
+cd /opt/danloo/get.danloo.cc/backend
 
 # Load environment variables if file exists
-if [ -f "/opt/danloo/.env" ]; then
-    echo "Loading environment variables from /opt/danloo/.env"
+if [ -f "/opt/danloo/get.danloo.cc/.env" ]; then
+    echo "Loading environment variables from /opt/danloo/get.danloo.cc/.env"
     # Use a safer method to load env vars
     set -a
-    source /opt/danloo/.env
+    source /opt/danloo/get.danloo.cc/.env
     set +a
 else
-    echo "Warning: /opt/danloo/.env not found"
+    echo "Warning: /opt/danloo/get.danloo.cc/.env not found"
 fi
 
 # Debug: show what DATABASE_URL is being used

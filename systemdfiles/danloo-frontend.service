@@ -7,8 +7,8 @@ Wants=network.target
 Type=simple
 User=danloo
 Group=danloo
-WorkingDirectory=/opt/danloo/frontend
-EnvironmentFile=/opt/danloo/.env
+WorkingDirectory=/opt/danloo/get.danloo.cc/frontend
+EnvironmentFile=/opt/danloo/get.danloo.cc/.env
 ExecStart=/usr/bin/npm start
 Restart=always
 RestartSec=10
@@ -20,7 +20,7 @@ NoNewPrivileges=true
 PrivateTmp=true
 ProtectHome=false
 ProtectSystem=strict
-ReadWritePaths=/opt/danloo/frontend
+ReadWritePaths=/opt/danloo/get.danloo.cc/frontend
 ReadWritePaths=/var/log/danloo
 
 [Install]
