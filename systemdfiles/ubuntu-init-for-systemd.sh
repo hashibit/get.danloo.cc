@@ -205,7 +205,7 @@ if [ -L "/opt/danloo/get.danloo.cc" ]; then
 else
     # /opt/danloo/get.danloo.cc is not a symlink, create directory structure
     print_status "Creating directory structure at /opt/danloo/get.danloo.cc..."
-    mkdir -p /opt/danloo/get.danloo.cc/{frontend,backend,ai-provider,process,ai-proxy,admin,common,systemdfiles,nginx}
+    mkdir -p /opt/danloo/get.danloo.cc/{frontend,backend,process,admin,common,systemdfiles,nginx}
     mkdir -p /opt/danloo/get.danloo.cc/frontend/.next
     mkdir -p /opt/danloo/get.danloo.cc/frontend/node_modules
 
@@ -284,7 +284,7 @@ mkdir -p /etc/systemd/system
 
 # Create symbolic links for systemd service files
 print_status "Setting up systemd service files..."
-services=("danloo-frontend" "danloo-backend" "danloo-ai-provider" "danloo-process" "danloo-ai-proxy" "danloo-admin" "danloo-nginx" "danloo-nginx-minio")
+services=("danloo-frontend" "danloo-backend" "danloo-process" "danloo-admin" "danloo-nginx" "danloo-nginx-minio")
 
 # Check if service files exist in current directory
 if [ -f "danloo-frontend.service" ]; then

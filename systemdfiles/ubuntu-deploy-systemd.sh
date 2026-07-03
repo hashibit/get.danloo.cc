@@ -42,7 +42,7 @@ fi
 # Create log directory and files with correct permissions
 print_status "Creating log directory and files..."
 mkdir -p /var/log/danloo
-touch /var/log/danloo/{frontend,frontend-error,backend,admin,ai-provider,ai-proxy,process,nginx,nginx-minio}.log
+touch /var/log/danloo/{frontend,frontend-error,backend,admin,process,nginx,nginx-minio}.log
 chown -R danloo:danloo /var/log/danloo
 chmod 755 /var/log/danloo
 chmod 644 /var/log/danloo/*.log
@@ -67,8 +67,6 @@ services=(
     "danloo-nginx"
     "danloo-nginx-minio"
     "danloo-admin"
-    "danloo-ai-provider"
-    "danloo-ai-proxy"
     "danloo-backend"
     "danloo-process"
 )
@@ -123,7 +121,7 @@ echo ""
 print_status "Useful commands:"
 echo "  View all service status: systemctl status danloo-*"
 echo "  View service logs: journalctl -u danloo-frontend -f"
-echo "  Stop all services: systemctl stop danloo-frontend danloo-backend danloo-ai-provider danloo-process danloo-ai-proxy danloo-admin danloo-nginx danloo-nginx-minio"
+echo "  Stop all services: systemctl stop danloo-frontend danloo-backend danloo-process danloo-admin danloo-nginx danloo-nginx-minio"
 echo "  Restart a service: systemctl restart danloo-frontend"
 echo ""
 print_status "Access points:"
